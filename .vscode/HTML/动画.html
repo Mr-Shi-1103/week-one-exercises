@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Html Web Code Runner</title>
+  <style>
+    div {
+      width: 50px;
+      height: 50px;
+      clip-path: polygon(50% 0, 100% 100%, 0% 100%, 0% 100%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: red;
+      transform: translate(-50%, -50%);
+      transition: clip-path 1s, transform 1s, background-color 1s;
+
+    }
+
+    div:hover {
+      transform: translate(-50%, calc(-50% + -2px)) scale(1.2) rotate(45deg);
+      background-color: blue;
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    }
+  </style>
+</head>
+
+<body>
+</body>
+
+</html>

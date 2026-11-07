@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(246, 243, 248);
+        }
+
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            background-color: white;
+            box-shadow: 5px 5px 5px rgb(205, 205, 205);
+            border-radius: 8px;
+            padding: 2em;
+            height: 500px;
+            overflow: auto;
+        }
+
+        .q {
+            width: 100%;
+            height: 1.5em;
+            border: solid 2px rgb(118, 115, 115);
+            border-radius: 5px;
+        }
+
+        .w {
+            width: 50%;
+            height: 3em;
+            border: solid 2px rgb(118, 115, 115);
+            border-radius: 5px;
+        }
+
+        .q:hover {
+            background-color: rgb(225, 226, 235);
+        }
+
+        span {
+            color: red;
+        }
+
+        div {
+            height: 1em;
+            color: rgb(121, 104, 156);
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+
+        .submit {
+            color: white;
+            background-color: rgb(121, 104, 156);
+            border: solid;
+            position: relative;
+            right: auto;
+            width: 12em;
+            height: 3em;
+            border-radius: 10px;
+
+        }
+
+        .reset {
+            color: white;
+            background-color: rgb(182, 169, 209);
+            border: solid;
+            position: relative;
+            right: auto;
+            width: 12em;
+            height: 3em;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://example.com/">
+        <div>玩游戏我只玩第五人格</div><br>
+        <lable>姓名</lable><span>*</span><br>
+        <input type="text" class="q" placeholder="请输入姓名" required><br><br>
+        <lable id="tel">电话号码</lable><span>*</span><br>
+        <input type="tel" class="q" placeholder="请输入手机号" required><br><br>
+        <label>性别</label><br>
+        <input type="radio" id="man" name="gener">
+        <lable for="man">男</lable>&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="woman" name="gener">
+        <lable for="woman">女</lable>&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gener">
+        <lable>猜你喜欢</lable><br><br>
+        <lable>爱好</lable><br>
+        <input type="checkbox">
+        <lable>王者荣耀</lable>&nbsp;
+        <input type="checkbox" checked>
+        <lable>第五人格</lable>&nbsp;
+        <input type="checkbox">
+        <lable>明日方舟</lable>&nbsp;
+        <input type="checkbox">
+        <lable>其他</lable>&nbsp;
+        <br><br>
+        <lable>头像（选择本地文档）</lable><br>
+        <input type="file" accept="img"><br><br>
+        <lable>地区</lable><br>
+        <select>
+            <option>请选择地区</option>
+            <option>北京</option>
+            <option>上海</option>
+            <option>福建</option>
+            <option>广东</option>
+            <option>湖北</option>
+            <option>其他</option>
+        </select><br><br>
+        <label>个人介绍</label><br>
+        <textarea maxlength="50" class="w" placeholder="简单介绍自己，上限50字"></textarea><br><br>
+        <button type="submit" class="submit">提交</button>&nbsp;&nbsp;&nbsp;
+        <button type="reset" class="reset">重置</button>
+
+    </form>
+
+
+</body>
+
+</html>

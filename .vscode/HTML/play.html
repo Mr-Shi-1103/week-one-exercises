@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .c{
+            transition: all 0.1s;
+            animation: spin;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            width: 120px;
+            height: 40px;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 40px;
+            background:
+             linear-gradient(to right,rgb(84, 29, 237),rgb(46, 226, 73),rgb(226, 226, 46),rgb(46, 226, 211),rgb(46, 124, 226),rgb(151, 46, 226),rgb(255, 85, 0),aqua,rgb(84, 29, 237));
+            background-size: 500%;
+            color: white;
+            z-index: 1;
+            text-decoration: none;
+        }
+        .c::before{
+            content: "";
+            position: absolute;
+            inset:-5px;
+            background:
+             linear-gradient(to right,aqua,rgb(46, 226, 73),rgb(226, 226, 46),rgb(46, 226, 211),rgb(46, 124, 226),rgb(151, 46, 226),rgb(255, 85, 0),aqua);
+            background-size: 500%;
+            border-radius: 50px;
+            opacity: 0;
+        }
+        .c:hover::before{
+            filter: blur(20px);
+            opacity: 70%;
+            z-index: -1;
+            animation: spin 15s linear infinite ;
+            transform: scale(1.1);
+            transition: opacity 0.3s;
+
+        }
+        .c:hover{
+            animation: spin 15s linear infinite ;
+            transform: scale(1.05 );
+        }
+        @keyframes spin{
+            from {
+                background-position: 0%;
+            }
+            to {background-position: 500%;}
+        }
+    </style>
+</head>
+<body>
+    <a class="c" href="http://127.0.0.1:5500/.vscode/HTML/%E5%8A%A8%E7%94%BB2.html" target="_blank">BUTTON</a>
+    
+</body>
+</html>
