@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  let size = 8;
+  let item;
+  let line = "";
+  for (row = 1; row <= size; row++) {
+    if (row % 2 == 1) {
+      for (num = 1; num <= size; num++) {
+        if (num % 2 == 1) {
+          item = " ";
+        }
+        else {
+          item = "#";
+        }
+        line += item;
+      }
+      console.log(line);
+      line = "";
+    }
+    else {
+      for (num = 1; num <= size; num++) {
+        if (num % 2 == 0) {
+          item = " ";
+        }
+        else {
+          item = "#";
+        }
+        line += item;
+      }
+      console.log(line);
+      line = "";
+    }
+
+  }
+
+
+  // let size = 8;
+
+  // for (let row = 1; row <= size; row++) {
+  //   let line = "";
+  //   for (let col = 1; col <= size; col++) {
+  //     if (row % 2 !== 0) {            // 奇数行
+  //       line += col % 2 === 1 ? " " : "#";
+  //     } else {                         // 偶数行
+  //       line += col % 2 === 1 ? "#" : " ";
+  //     }
+  //   }
+  //   console.log(line);
+  // }
+
+</script>
+
+</html>
