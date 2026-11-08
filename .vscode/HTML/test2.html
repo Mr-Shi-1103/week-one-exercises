@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Test Page</title>
+	<mate charset="UTF-8">
+		<style>
+			p {
+				/*前面是字体族名称  最后一个是类族名称
+	    浏览器在显示字体的时候，依次判断是否支持当前的字体，知道最后的字体系列*/
+				font-family: "仿宋", "宋体", sans-serif;
+				/*bold加粗  bolder深度加粗  lighter细体（100-900）*/
+				font-weight: bold;
+				/*font-size字体大小  取值：1、具体的px值
+	    2、百分比（默认字体大小16px）*/
+				font-size: 150%;
+				/*font-style字体斜体*/
+				font-style: italic;
+				color: green;
+				/*opacity 透明度（0是全透明）*/
+				opacity: 1;
+				font-size: 30px;
+				/*line-height行高：单行字体占用的高度*/
+				line-height: 45px;
+				/*justify 两端对齐   left=start：左对齐（默认）  right=end：右对齐  ceenter: 居中对齐*/
+				text-align: justify;
+				/*letter-spacing:控制字符间距（px normal）*/
+				letter-spacing: normal;
+				/*文本修饰  下划线underline  中划线line-through  上划线over*/
+				text-decoration: none;
+				/*三者配合使用：不换行，以...的形式显示
+	    (三个属性配合使用实现单行超出文本隐藏)*/
+				/*overflow: hidden;  !*处理超出显示屏的内容隐藏*!
+	    white-space: nowrap;  !*不换行*!
+	    text-overflow: ellipsis; !*截取还是以...的方式显示*!*/
+				/*文本阴影颜色  x方向的偏移 y方向的偏移  阴影的颜色*/
+				text-shadow: 2px 2px #f2e78d;
+				/*文本描边 描边的宽度  描边的颜色*/
+				-webkit-text-stroke: 2px #ff7292;
+				/*首行缩进*/
+				/*em：相对的字符单位（2倍的字体大小）*/
+				text-indent: 2em;
+			}
+		</style>
+</head>
+
+<body>
+	<p>每天学一点，你将大不同!</p>
+</body>
+
+</html>
